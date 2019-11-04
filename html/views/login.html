@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link id="bootstrap-css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title></title>
+    <style>
+      body {
+          font-family: Verdana;
+          font-size: 16px;
+          background: #123345
+      }
+      
+    </style>
+    <div>
+      <head>
+        <body>
+          <div class="login-info-box">
+            <div class="skyblue-panel">
+              <form method="POST" action="/getValues">
+                <div class="login-show">
+                  <h2>Member login</h2>
+                  <input type="text" placeholder="enter username" name="Username"><br>
+                  <input type="password" placeholder="Password" name="Password"><br>
+                  <button type="submit">Login</button>
+                </div>
+              </form>
+              <script>
+                $(document).ready(function () {
+                    $('.login-show').addClass('show-log-panel');
+                });
+              </script>
+            </div>
+          </div>
+        </body>
+      </head>
+    </div>
+  </head>
+</html>
